@@ -1,0 +1,5 @@
+category: Text
+requires: cygwin glib2-devel libgsf1-devel
+external-source: wv2
+sdesc: "Library for reading MSWord documents (development)"
+ldesc: "Library for reading MSWord documents"

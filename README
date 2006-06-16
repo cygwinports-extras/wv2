@@ -1,0 +1,106 @@
+wv2
+------------------------------------------
+Library for reading MSWord documents.
+
+Runtime requirements:
+  cygwin-1.5.20-1
+  glib2-2.10.3-1
+  libgsf114-1.14.1-1
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.20-1
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.2-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  gcc-g++-3.4.4-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.5-1
+
+Canonical website:
+  http://wvware.sourceforge.net/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/wvware/
+
+-------------------------------------------
+
+Build instructions:
+  unpack wv2-0.2.3-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./wv2-0.2.3-X.cygport all
+
+This will create:
+  /usr/src/wv2-0.2.3-X-src.tar.bz2
+  /usr/src/wv2-0.2.3-X.tar.bz2
+  /usr/src/wv2-devel-0.2.3-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the main package:
+
+  /usr/bin/cygwv2-1.dll
+  /usr/share/doc/Cygwin/wv2-0.2.3.README
+  /usr/share/doc/wv2-0.2.3/AUTHORS
+  /usr/share/doc/wv2-0.2.3/ChangeLog
+  /usr/share/doc/wv2-0.2.3/COPYING.LIB
+  /usr/share/doc/wv2-0.2.3/HACKING
+  /usr/share/doc/wv2-0.2.3/html/arch.png
+  /usr/share/doc/wv2-0.2.3/html/DESIGN.html
+  /usr/share/doc/wv2-0.2.3/html/parsers.png
+  /usr/share/doc/wv2-0.2.3/INSTALL
+  /usr/share/doc/wv2-0.2.3/LINKS
+  /usr/share/doc/wv2-0.2.3/README
+  /usr/share/doc/wv2-0.2.3/THANKS
+  /usr/share/doc/wv2-0.2.3/TODO
+
+Files included in the devel package:
+
+  /usr/bin/wv2-config
+  /usr/include/wv2/associatedstrings.h
+  /usr/include/wv2/convert.h
+  /usr/include/wv2/dllmagic.h
+  /usr/include/wv2/fields.h
+  /usr/include/wv2/fonts.h
+  /usr/include/wv2/functor.h
+  /usr/include/wv2/functordata.h
+  /usr/include/wv2/global.h
+  /usr/include/wv2/handlers.h
+  /usr/include/wv2/lists.h
+  /usr/include/wv2/olestorage.h
+  /usr/include/wv2/olestream.h
+  /usr/include/wv2/paragraphproperties.h
+  /usr/include/wv2/parser.h
+  /usr/include/wv2/parserfactory.h
+  /usr/include/wv2/sharedptr.h
+  /usr/include/wv2/styles.h
+  /usr/include/wv2/textconverter.h
+  /usr/include/wv2/ustring.h
+  /usr/include/wv2/utilities.h
+  /usr/include/wv2/word95_generated.h
+  /usr/include/wv2/word97_generated.h
+  /usr/include/wv2/word_helper.h
+  /usr/include/wv2/wvlog.h
+  /usr/lib/libwv2.dll.a
+  /usr/lib/libwv2.la
+
+------------------
+
+Port Notes:
+
+----- version 0.2.3-1 -----
+Version bump to fix a security vulnerability.
+
+----- version 0.2.2-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

@@ -1,5 +1,5 @@
 category: Text
-requires: cygwin glib2-devel libgsf1-devel
+requires: cygwin wv2 glib2-devel libgsf1-devel libiconv
 external-source: wv2
 sdesc: "Library for reading MSWord documents (development)"
 ldesc: "Library for reading MSWord documents"

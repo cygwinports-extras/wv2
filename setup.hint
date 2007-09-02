@@ -1,4 +1,4 @@
 category: Text
-requires: cygwin glib2 libgsf114
+requires: cygwin glib2 libgsf114 libiconv2
 sdesc: "Library for reading MSWord documents (runtime)"
 ldesc: "Library for reading MSWord documents"

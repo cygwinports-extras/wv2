@@ -3,30 +3,31 @@ wv2
 Library for reading MSWord documents.
 
 Runtime requirements:
-  cygwin-1.5.20-1
-  glib2-2.10.3-1
-  libgsf114-1.14.1-1
+  cygwin-1.5.24-2
+  glib2-2.12.13-1
+  libgsf114-1.14.5-1
+  libiconv2-1.11-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.20-1
-  autoconf2.5-2.59-2
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.2-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  gcc-g++-3.4.4-1
-  libtool1.5-1.5.22-1
-  make-3.80-1
-  pkg-config-0.20-1
-  sed-4.1.5-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.3.5-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
 
 Canonical website:
   http://wvware.sourceforge.net/
 
 Canonical download:
-  http://prdownloads.sourceforge.net/wvware/
+  http://downloads.sourceforge.net/wvware/
 
 -------------------------------------------
 
@@ -94,6 +95,9 @@ Files included in the devel package:
 ------------------
 
 Port Notes:
+
+----- version 0.2.3-2 -----
+Fixed `wv2-config --libs` output.
 
 ----- version 0.2.3-1 -----
 Version bump to fix a security vulnerability.

@@ -47,15 +47,6 @@
  AC_MSG_CHECKING(need for const in iconv)
  AC_TRY_COMPILE([
  #ifdef HAVE_ICONV_H
-@@ -183,7 +183,7 @@
- 
- AC_LANG_C
- 
--dnl Check if the neede conversions are supported
-+dnl Check if the needed conversions are supported
- AC_MSG_CHECKING(whether the iconv installation is complete enough)
- AC_TRY_RUN([
- #ifdef HAVE_ICONV_H
 @@ -246,17 +246,17 @@
  fi
  
@@ -81,12 +72,7 @@
  Makefile
 --- origsrc/wv2-0.2.3/src/Makefile.am	2006-06-12 11:40:11.000000000 -0500
 +++ src/wv2-0.2.3/src/Makefile.am	2007-09-02 01:10:39.750000000 -0500
-@@ -8,15 +8,15 @@
- 	-I$(top_srcdir)/include	\
- 	-I$(top_builddir)	\
- 	-I$(srcdir)		\
--	@WV_CFLAGS@
-+	$(WV_CFLAGS)
+@@ -12,11 +12,11 @@
  
  lib_LTLIBRARIES = libwv2.la
  
@@ -100,60 +86,6 @@
  
  libwv2_la_SOURCES = olestorage.cpp olestream.cpp \
  	word97_generated.cpp word97_helper.cpp word95_helper.cpp \
---- origsrc/wv2-0.2.3/tests/Makefile.am	2006-06-12 11:40:12.000000000 -0500
-+++ src/wv2-0.2.3/tests/Makefile.am	2007-09-02 01:10:39.828125000 -0500
-@@ -18,41 +18,31 @@
- 	ustringtest sharedptrtest handlertest
- 
- oletest_SOURCES = oletest.cpp
--oletest_LDADD = $(top_builddir)/src/libwv2.la
--oletest_LDFLAGS = @WV_LDFLAGS@
-+oletest_LDADD = $(top_builddir)/src/libwv2.la $(WV_LIBS)
- 
- word97_test_SOURCES = word97_test.cpp
--word97_test_LDADD = $(top_builddir)/src/libwv2.la
--word97_test_LDFLAGS = @WV_LDFLAGS@
-+word97_test_LDADD = $(top_builddir)/src/libwv2.la $(WV_LIBS)
- 
- word95_test_SOURCES = word95_test.cpp
--word95_test_LDADD = $(top_builddir)/src/libwv2.la
--word95_test_LDFLAGS = @WV_LDFLAGS@
-+word95_test_LDADD = $(top_builddir)/src/libwv2.la $(WV_LIBS)
- 
- iconvtest_SOURCES = iconvtest.cpp
--iconvtest_LDADD = $(top_builddir)/src/libwv2.la
--iconvtest_LDFLAGS = @WV_LDFLAGS@
-+iconvtest_LDADD = $(top_builddir)/src/libwv2.la $(WV_LIBS)
- 
- parsertest_SOURCES = parsertest.cpp
--parsertest_LDADD = $(top_builddir)/src/libwv2.la
--parsertest_LDFLAGS = @WV_LDFLAGS@
-+parsertest_LDADD = $(top_builddir)/src/libwv2.la $(WV_LIBS)
- 
- parsertest_mem_SOURCES = parsertest_mem.cpp
--parsertest_mem_LDADD = $(top_builddir)/src/libwv2.la
--parsertest_mem_LDFLAGS = @WV_LDFLAGS@
-+parsertest_mem_LDADD = $(top_builddir)/src/libwv2.la $(WV_LIBS)
- 
- helpertest_SOURCES = helpertest.cpp
--helpertest_LDADD = $(top_builddir)/src/libwv2.la
--helpertest_LDFLAGS = @WV_LDFLAGS@
-+helpertest_LDADD = $(top_builddir)/src/libwv2.la $(WV_LIBS)
- 
- ustringtest_SOURCES = ustringtest.cpp
--ustringtest_LDADD = $(top_builddir)/src/libwv2.la
--ustringtest_LDFLAGS = @WV_LDFLAGS@
-+ustringtest_LDADD = $(top_builddir)/src/libwv2.la $(WV_LIBS)
- 
- sharedptrtest_SOURCES = sharedptrtest.cpp
--sharedptrtest_LDADD = $(top_builddir)/src/libwv2.la
--sharedptrtest_LDFLAGS = @WV_LDFLAGS@
-+sharedptrtest_LDADD = $(top_builddir)/src/libwv2.la $(WV_LIBS)
- 
- handlertest_SOURCES = handlertest.cpp
--handlertest_LDADD = $(top_builddir)/src/libwv2.la
--handlertest_LDFLAGS = @WV_LDFLAGS@
-+handlertest_LDADD = $(top_builddir)/src/libwv2.la $(WV_LIBS)
 --- origsrc/wv2-0.2.3/wv2-config.in	2006-06-12 11:40:11.000000000 -0500
 +++ src/wv2-0.2.3/wv2-config.in	2007-09-02 01:11:27.578125000 -0500
 @@ -76,7 +76,7 @@

@@ -3,24 +3,23 @@ wv2
 Library for reading MSWord documents.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  glib2-2.12.13-1
-  libgsf114-1.14.5-1
-  libiconv2-1.11-1
+  cygwin-1.5.25-15
+  libglib2.0_0-2.18.3-1
+  libgsf1_114-1.14.10-1
+  libiconv2-1.12-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.5-1
-  gawk-3.1.5-4
+  autoconf2.5-2.63-1
+  automake1.9-1.9.6-3
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
@@ -40,15 +39,15 @@ Build instructions:
 
 This will create:
   /usr/src/wv2-0.2.3-X-src.tar.bz2
-  /usr/src/wv2-0.2.3-X.tar.bz2
-  /usr/src/wv2-devel-0.2.3-X.tar.bz2
+  /usr/src/libwv2-devel-0.2.3-X.tar.bz2
+  /usr/src/libwv2_1-0.2.3-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the main package:
+Files included in the binary packages:
 
+(libwv2_1)
   /usr/bin/cygwv2-1.dll
-  /usr/share/doc/Cygwin/wv2-0.2.3.README
   /usr/share/doc/wv2-0.2.3/AUTHORS
   /usr/share/doc/wv2-0.2.3/ChangeLog
   /usr/share/doc/wv2-0.2.3/COPYING.LIB
@@ -62,8 +61,7 @@ Files included in the main package:
   /usr/share/doc/wv2-0.2.3/THANKS
   /usr/share/doc/wv2-0.2.3/TODO
 
-Files included in the devel package:
-
+(libwv2-devel)
   /usr/bin/wv2-config
   /usr/include/wv2/associatedstrings.h
   /usr/include/wv2/convert.h
@@ -95,6 +93,9 @@ Files included in the devel package:
 ------------------
 
 Port Notes:
+
+----- version 0.2.3-3 -----
+Rebuilt.
 
 ----- version 0.2.3-2 -----
 Fixed `wv2-config --libs` output.

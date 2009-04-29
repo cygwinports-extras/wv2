@@ -3,23 +3,26 @@ wv2
 Library for reading MSWord documents.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libglib2.0_0-2.18.3-1
-  libgsf1_114-1.14.10-1
-  libiconv2-1.12-1
+  cygwin-1.7.0-45
+  libgcc1-4.3.2-2
+  libglib2.0_0-2.20.1-1
+  libgsf1_114-1.14.12-1
+  libiconv2-1.12-10
+  libstdc++6-4.3.2-2
+  zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding devel packages)
-  autoconf2.5-2.63-1
-  automake1.9-1.9.6-3
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  libtool-2.2.6a-1
-  make-3.81-1
-  pkg-config-0.23a-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  libtool-2.2.7a-12
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -31,35 +34,34 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack wv2-0.2.3-X-src.tar.bz2
+  unpack wv2-0.3.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./wv2-0.2.3-X.cygport all
+  cygport ./wv2-0.3.1-X.cygport all
 
 This will create:
-  /usr/src/wv2-0.2.3-X-src.tar.bz2
-  /usr/src/libwv2-devel-0.2.3-X.tar.bz2
-  /usr/src/libwv2_1-0.2.3-X.tar.bz2
+  /usr/src/wv2-0.3.1-X-src.tar.bz2
+  /usr/src/libwv2-devel-0.3.1-X.tar.bz2
+  /usr/src/libwv2_2-0.3.1-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
-(libwv2_1)
-  /usr/bin/cygwv2-1.dll
-  /usr/share/doc/wv2-0.2.3/AUTHORS
-  /usr/share/doc/wv2-0.2.3/ChangeLog
-  /usr/share/doc/wv2-0.2.3/COPYING.LIB
-  /usr/share/doc/wv2-0.2.3/HACKING
-  /usr/share/doc/wv2-0.2.3/html/arch.png
-  /usr/share/doc/wv2-0.2.3/html/DESIGN.html
-  /usr/share/doc/wv2-0.2.3/html/parsers.png
-  /usr/share/doc/wv2-0.2.3/INSTALL
-  /usr/share/doc/wv2-0.2.3/LINKS
-  /usr/share/doc/wv2-0.2.3/README
-  /usr/share/doc/wv2-0.2.3/THANKS
-  /usr/share/doc/wv2-0.2.3/TODO
+(libwv2_2)
+  /usr/bin/cygwv2-2.dll
+  /usr/share/doc/wv2/AUTHORS
+  /usr/share/doc/wv2/ChangeLog
+  /usr/share/doc/wv2/COPYING.LIB
+  /usr/share/doc/wv2/HACKING
+  /usr/share/doc/wv2/LINKS
+  /usr/share/doc/wv2/README
+  /usr/share/doc/wv2/THANKS
+  /usr/share/doc/wv2/TODO
+  /usr/share/doc/wv2/html/DESIGN.html
+  /usr/share/doc/wv2/html/arch.png
+  /usr/share/doc/wv2/html/parsers.png
 
 (libwv2-devel)
   /usr/bin/wv2-config
@@ -94,17 +96,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 0.2.3-3 -----
-Rebuilt.
-
------ version 0.2.3-2 -----
-Fixed `wv2-config --libs` output.
-
------ version 0.2.3-1 -----
-Version bump to fix a security vulnerability.
-
------ version 0.2.2-1 -----
-Initial release for Cygwin.
+----- version 0.3.1-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

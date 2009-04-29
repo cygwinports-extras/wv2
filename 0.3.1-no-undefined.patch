@@ -1,0 +1,11 @@
+--- origsrc/wv2-0.3.1/src/Makefile.am	2009-03-03 17:32:51.000000000 -0600
++++ src/wv2-0.3.1/src/Makefile.am	2009-04-29 15:28:11.420250000 -0500
+@@ -11,7 +11,7 @@ lib_LTLIBRARIES = libwv2.la
+ libwv2_la_LIBADD = -lm $(WV2_LIBS)
+ libwv2_la_LDFLAGS = \
+ 	-version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE) \
+-	-export-dynamic $(WV2_LDFLAGS)
++	-export-dynamic -no-undefined $(WV2_LDFLAGS)
+ 
+ libwv2_la_SOURCES = olestorage.cpp olestream.cpp \
+ 	word97_generated.cpp word97_helper.cpp word95_helper.cpp \

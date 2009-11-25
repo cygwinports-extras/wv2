@@ -1,5 +1,5 @@
 category: Graphics Text
-requires: libwv2_2 libglib2.0-devel libgsf1-devel libiconv libstdc++6-devel zlib-devel
+requires: libwv2_4 libglib2.0-devel libgsf1-devel libiconv zlib-devel
 external-source: wv2
 sdesc: "Library for reading MSWord documents (development)"
 ldesc: "Library for reading MSWord documents"

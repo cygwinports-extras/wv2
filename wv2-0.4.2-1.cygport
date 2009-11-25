@@ -1,11 +1,13 @@
+inherit cmake
+
 DESCRIPTION="Library for reading MSWord .DOC files"
 HOMEPAGE="http://wvware.sourceforge.net/"
 SRC_URI="mirror://sourceforge/wvware/${P}.tar.bz2"
-PATCH_URI="0.3.1-no-undefined.patch"
+PATCH_URI="0.4.2-cmake.patch"
 
-PKG_NAMES="${PN} libwv2_2 libwv2-devel"
-libwv2_2_CONTENTS='usr/bin/cygwv2-2.dll usr/share/'
-libwv2_devel_CONTENTS='usr/bin/*-config usr/include/ usr/lib/'
+PKG_NAMES="${PN} libwv2_4 libwv2-devel"
+libwv2_4_CONTENTS='usr/bin/cygwv2-4.dll usr/share/'
+libwv2_devel_CONTENTS='usr/bin/wv2-config usr/include/ usr/lib/'
 
 DOCS="doc/HACKING doc/LINKS"
 HTMLDOCS="doc/*.html doc/*.png"

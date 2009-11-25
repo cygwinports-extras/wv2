@@ -3,27 +3,23 @@ wv2
 Library for reading MSWord documents.
 
 Runtime requirements:
-  cygwin-1.7.0-45
-  libgcc1-4.3.2-2
-  libglib2.0_0-2.20.1-1
-  libgsf1_114-1.14.12-1
-  libiconv2-1.12-10
-  libstdc++6-4.3.2-2
+  cygwin-1.7.0-64
+  libgcc1-4.3.4-1
+  libglib2.0_0-2.22.2-1
+  libgsf1_114-1.14.16-1
+  libiconv2-1.13-10
+  libstdc++6-4.3.4-1
   zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding devel packages)
-  autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
-  binutils-20080624-2
-  cygport-0.9.6-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  gcc4-g++-4.3.2-2
-  libtool-2.2.7a-12
+  binutils-2.19.51-1
+  cmake-2.8.0-10
+  cygport-0.9.10-1
+  gcc4-core-4.3.4-1
+  gcc4-g++-4.3.4-1
   make-3.81-2
   pkg-config-0.23b-10
-  sed-4.1.5-2
 
 Canonical website:
   http://wvware.sourceforge.net/
@@ -34,67 +30,23 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack wv2-0.3.1-X-src.tar.bz2
+  unpack wv2-0.4.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./wv2-0.3.1-X.cygport all
+  cygport ./wv2-0.4.2-X.cygport all
 
 This will create:
-  /usr/src/wv2-0.3.1-X-src.tar.bz2
-  /usr/src/libwv2-devel-0.3.1-X.tar.bz2
-  /usr/src/libwv2_2-0.3.1-X.tar.bz2
+  /usr/src/wv2-0.4.2-X-src.tar.bz2
+  /usr/src/libwv2-devel-0.4.2-X.tar.bz2
+  /usr/src/libwv2_4-0.4.2-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(libwv2_2)
-  /usr/bin/cygwv2-2.dll
-  /usr/share/doc/wv2/AUTHORS
-  /usr/share/doc/wv2/ChangeLog
-  /usr/share/doc/wv2/COPYING.LIB
-  /usr/share/doc/wv2/HACKING
-  /usr/share/doc/wv2/LINKS
-  /usr/share/doc/wv2/README
-  /usr/share/doc/wv2/THANKS
-  /usr/share/doc/wv2/TODO
-  /usr/share/doc/wv2/html/DESIGN.html
-  /usr/share/doc/wv2/html/arch.png
-  /usr/share/doc/wv2/html/parsers.png
-
-(libwv2-devel)
-  /usr/bin/wv2-config
-  /usr/include/wv2/associatedstrings.h
-  /usr/include/wv2/convert.h
-  /usr/include/wv2/dllmagic.h
-  /usr/include/wv2/fields.h
-  /usr/include/wv2/fonts.h
-  /usr/include/wv2/functor.h
-  /usr/include/wv2/functordata.h
-  /usr/include/wv2/global.h
-  /usr/include/wv2/handlers.h
-  /usr/include/wv2/lists.h
-  /usr/include/wv2/olestorage.h
-  /usr/include/wv2/olestream.h
-  /usr/include/wv2/paragraphproperties.h
-  /usr/include/wv2/parser.h
-  /usr/include/wv2/parserfactory.h
-  /usr/include/wv2/sharedptr.h
-  /usr/include/wv2/styles.h
-  /usr/include/wv2/textconverter.h
-  /usr/include/wv2/ustring.h
-  /usr/include/wv2/utilities.h
-  /usr/include/wv2/word95_generated.h
-  /usr/include/wv2/word97_generated.h
-  /usr/include/wv2/word_helper.h
-  /usr/include/wv2/wvlog.h
-  /usr/lib/libwv2.dll.a
-  /usr/lib/libwv2.la
-
-------------------
-
 Port Notes:
+
+----- version 0.4.2-1 -----
+Version bump.
 
 ----- version 0.3.1-1 -----
 Initial release for Cygwin 1.7.
